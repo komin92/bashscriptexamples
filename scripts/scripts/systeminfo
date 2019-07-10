@@ -1,0 +1,12 @@
+#!/bin/bash
+#script to display various details of the system
+echo "system information"
+hostnamectl
+echo -e "\e[31;43m***** CURRENTLY LOGGED-IN USERS *****\e[0m"
+w
+echo "#show diskusage"
+df -h
+echo "#show top ten cpu usages using ps"
+ps -eo comm,%mem,%cpu --sort=-%cpu | head -n 11 
+echo "#show top ten cpu usages using top"
+top -b -o +%CPU | head -n 20|tail -n 14|head -n 11

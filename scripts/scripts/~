@@ -1,0 +1,6 @@
+[local]
+name= local repo
+baseurl=ftp://116.90.228.201:45632/Redhat_repo/
+enabled=1
+gpgcheck=1
+gpgkey=ftp://116.90.228.201:45632/Redhat_repo/RPM-GPG-KEY-redhat-release
