@@ -1,0 +1,8 @@
+#!/bin/bash
+#run this script with few argument
+echo you have entered following number of argument $#
+for i in $@
+do
+	echo $i
+done
+exit 0
